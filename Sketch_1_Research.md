@@ -1,4 +1,4 @@
-# Research & Proposal
+# Proposal
 
 Editted: Sep 17
 

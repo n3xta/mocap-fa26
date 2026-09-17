@@ -1,91 +1,46 @@
-# Final Project Sketch — Maimai Motion Capture
+# Research & Proposal
 
-## Topic / Concept
+Editted: Sep 17
 
-I want to make a motion capture project based on **maimai**.
+For my final project, I want to build a performance around the connection between physical labor and machine learning.
 
-The basic idea is to record someone playing maimai and transfer the movement onto a 3D avatar. I am interested in how maimai movement looks when it is separated from the arcade machine and treated more like choreography or performance.
+The physical set will look like a small factory assembly line. I will wear a worker uniform and perform repetitive assembly tasks while wearing the motion capture suit.
 
-I also want to see how much of the movement can still be recognized as "maimai" without showing the actual game.
+At the same time, my motion will drive a humanoid robot avatar in Unreal Engine. Instead of a factory, the virtual character will exist inside a large, luxurious house.
 
-## Why Maimai
+So, the physical performer is doing repetitive labor in an industrial environment, while the digital result of that labor exists in an expensive and highly polished space.
 
-Maimai is interesting to me because the movement is very visible and expressive.
+The project is about surplus value and data extraction. Factory workers produce physical products, while students, workers, artists, and other people increasingly produce another kind of value: data. Our movements, writing, images, decisions, and interactions can become material for training automated systems.
 
-Even though players are technically just following the same chart, different players move very differently. Some movements are optimized for efficiency, while others are more exaggerated or stylized.
+## Performance
 
-I am also already familiar with the maimai community and watch a lot of gameplay/performance videos, so this is something I naturally want to explore.
+During the performance, I will repeatedly perform simple assembly-line actions: picking up objects, placing parts, sorting, assembling, and repeating the same motions.
 
-Here are some gameplay videos:
-- [Other players](https://www.bilibili.com/video/BV1cbjm62EWR/?share_source=copy_web&vd_source=92b1b3cede043ee6f18a980241287906)
-- [My own](https://www.bilibili.com/video/BV1rvgg6xE5j/?share_source=copy_web&vd_source=92b1b3cede043ee6f18a980241287906)
+There will be two visual layers happening at the same time:
 
-## Context / Research
+1. my body controls the humanoid robot in Unreal Engine.
+2. another screen or projection will show an active reinforcement-learning process.
 
-Maimai comes from Japanese arcade rhythm game culture. Because the player stands in front of a large circular machine and uses their whole upper body, playing it can look almost like a performance.
+I am interested in using Xiaomi MiMo's public RL page as part of this layer. MiMo currently has a public-facing RL dashboard, which gives the audience a direct visual reference to an AI system being trained rather than using a fake animation of “AI training.”
 
-For research, I can:
+The audience therefore sees three versions of labor at once:
 
-- observe maimai players in arcades
-- compare videos of different players playing the same chart
-- talk to players about how they develop their movement/style
-- record my own gameplay as an initial test
+human labor → captured motion/data → machine training / automated output
 
-## Motion Capture
+## Technical Setup
 
-Right now I am considering **optical tracking**, probably with HTC Vive trackers.
+* Media Commons
+* Unreal Engine
+* Humanoid robot avatar
+* Virtual luxury-house environment
+* Physical assembly-line set
+* Real-time projection or monitor output
+* Live RL training visualization / MiMo RL dashboard
 
-I originally thought about using an inertial motion capture suit, but drift may be a problem, especially because maimai movement depends on relatively precise hand positions.
+## Goal
 
-Vive trackers seem more suitable because they can give more stable positional tracking.
+I want to use the medium itself as part of the critique.
 
-I may mainly track:
+The technology used to make the artwork is also the subject of the artwork.
 
-- hands / arms
-- upper body
-- waist
-
-I probably do not need detailed finger tracking for the first version.
-
-## Challenges
-
-The biggest problem I expect is **retargeting**.
-
-If the avatar has very different body proportions from the real player, the hands may no longer reach the correct positions. For example, a character with short arms may not match the original maimai movement well.
-
-Other possible problems are:
-
-- tracker occlusion
-- calibration
-- limited tracking space
-- reconstructing the approximate position of the maimai machine
-- keeping the motion natural after retargeting
-
-For the first version, I will probably use a relatively human-proportioned avatar.
-
-## Permissions / Resources
-
-If I record another player, I will ask for permission before using their motion or video.
-
-Possible resources:
-
-- HTC Vive trackers
-- base stations
-- school mocap equipment
-- Blender / Unity / Unreal
-- a rigged 3D avatar
-
-## Scope / Feasibility
-
-I think this is feasible if I keep the first version small.
-
-My current plan is:
-
-1. Pick one short maimai chart or section.
-2. Record one performance.
-3. Capture the main body movement.
-4. Retarget it onto a 3D avatar.
-5. Recreate the approximate position of the maimai machine.
-6. Test how the movement looks without the original gameplay footage.
-
-If I have more time, I can compare different players or different avatars.
+I hope this open ended way can spark some discussions.
